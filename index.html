@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+  <header>
+    <img src="wraper.png" class="w-100" alt="" srcset="">
+  </header>
+    <div class="container nono">
+        <nav class="navbar navbar-expand-lg nav-bg">
+            <div class="container">
+                <a class="navbar-brand align-middle" href="#"><img src="logo-sm.png" alt="" srcset=""> Game Reviews
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse ps-5" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                        <a class="nav-link active fs-6" aria-current="page" href="#">mmorpg</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link fs-6" href="#">shooter</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link fs-6" href="#">sailing</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link fs-6" href="#">permadeath</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link fs-6" href="#">superhero</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link fs-6" href="#">pixel</a>
+                        </li>
+                    </ul> 
+               </div>
+            </div>
+         </nav>
+    </div>
+
+    <div class="container home">
+        <div class="row  g-4" id="myRow">
+            
+        </div>
+    </div>
+
+    <div class="layer-spinner d-none position-fixed top-0 start-0 end-0 bottom-0">
+      <span class="loader"></span>
+    </div>
+
+    <div class="game-details d-none p-4">
+      <div class="close-icon d-flex justify-content-between ms-5 mt-2 pb-3">
+        <h1 class="h3">Details Game</h1>
+        <i class="fa-solid fa-xmark text-white"></i>
+      </div>
+      <div class="game mt-2 row">
+        <div class="col-md-4">
+          <div class="inner-img">
+            <img src="thumbnail (1).jpg" class="img-fluid"  alt="">
+          </div>
+        </div>
+       <div class="col-md-8">
+          <div class="game-data">
+            <h3 class="">Title: <span>Overwatch 2</span></h3>
+            <h6 class="">Category : <span class="rounded-2 d-inline-block  text-black">Shooter</span></h6>
+            <h6>Platform : <span class="rounded-2 d-inline-block  text-black ">Windows</span></h6>
+            <h6>Status : <span class="rounded-2 d-inline-block  text-black">Live</span></h6>
+            <p class="mt-2"></p>
+            <button class="btn btn-outline-warning">Show Game</button>
+         </div>
+       </div>
+     </div>   
+   </div>
+
+   <div class="spinner-overlay d-none">
+    <div class="spinner-border text-light" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+  
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="Jquery.js"></script>
+    <!-- <script src="main.js"></script> -->
+     <script src="apiService.js"></script>
+     <script src="display.js"></script>
+    <script type="module" src="mainController.js"></script>
+</body>
+</html>
+
+
